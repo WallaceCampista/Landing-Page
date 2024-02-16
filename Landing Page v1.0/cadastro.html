@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon/favicon.ico" type="images">
+    <title>Cadastro | GhostSec</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/cadastro.css">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section class="container forms">
+        <!-- Formulário de Cadastro -->
+        <div class="form cadastro">
+            <div class="form-content">
+                <header>Cadastro</header>
+                <form action="#">
+                    <div class="container2">
+                        <div class="field input-field">
+                        <input id ="nome" type="text" placeholder="Nome*" class="input" maxlength="10" minlength="5" required>
+                        </div>
+                    
+                        <div class="field input-field">
+                            <input id = "sobrenome" type="text" placeholder="Sobrenome*" class="input" maxlength="10" minlength="5" required>
+                        </div>
+                    </div>
+                    <div class="container2">
+                        <div class="container3">
+                            <div class="field input-field">
+                                <input id = "cpf" type="text" placeholder="CPF*" class="input" maxlength="14" minlength="11" required>
+                            </div>
+                        </div>  
+                           
+                        <!-- <div>
+                            <h2 id="genero">Gênero:</h2>
+                            <form >
+                                <label>
+                                    <input type="radio" name="genero" value="masculino">
+                                    <span id="checkmas">Masculino</span>
+                                </label>
+                                <br>
+                                <label> 
+                                    <input type="radio" name="genero" value="feminino">
+                                    <span id="checkfem">Feminino</span>
+                                </label>
+                            </form>
+                        </div> -->
+                    </div>
+                    <div class="form-link">    
+                        <span id="labeldata">Data de Nascimento:</span>
+                    </div>                                            
+                    <div>
+                        <input id="datalabel" type="date" class="input" required>
+                    </div>
+                    <div class="container2">                        
+                        <div class="field input-field">
+                            <input type="text" id="endereco" placeholder="Endereço*" class="input" maxlength="22" minlength="10" required>
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="text" id="numero" placeholder="Numero" class="input" maxlength="5" minlength="1" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label id="label1" for="opcoes">Estado Civil: </label>
+                        <select id="opcoes1" name="opcoes">
+                            <option value="opcao0">Escolha uma das opções</option>
+                            <option value="opcao1">Solteiro</option>
+                            <option value="opcao2">Casado</option>
+                            <option value="opcao3">Separado</option>
+                            <option value="opcao4">Divorciado</option>
+                            <option value="opcao5">Viúvo</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label id="label2" for="opcoes">Escolaridade: </label>
+                        <select id="opcoes2" name="opcoes">
+                            <option value="opcao0">Escolha uma das opções</option>
+                            <option value="opcao1">Ensino Fundamental cursando</option>
+                            <option value="opcao2">Ensino Fundamental completo</option>
+                            <option value="opcao3">Ensino Fundamental incompleto</option>
+                            <option value="opcao4">Ensino Médio cursando</option>
+                            <option value="opcao5">Ensino Médio completo</option>
+                            <option value="opcao6">Ensino Médio incompleto</option>
+                            <option value="opcao7">Ensino Superior cursando</option>
+                            <option value="opcao8">Ensino Superior completo</option>
+                            <option value="opcao9">Pós graduado</option>
+                            <option value="opcao10">Mestrado</option>
+                            <option value="opcao11">Doutorado</option>
+                        </select>
+                    </div>
+
+                    <div class="line1"></div>
+                    
+                    <div class="field input-field">
+                        <input type="text" placeholder="Usuário*" class="input" maxlength="25" minlength="5" required>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Senha*" class="password" maxlength="20" minlength="8" required>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Confirme sua senha*" class="password" maxlength="20" minlength="8" required>
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email*" class="input" maxlength="50" required>
+                    </div>
+                    
+                    <span id="obrigatorios">Todos os campos com (*) são obrigatórios</span>
+
+                    <div class="field button-field">
+                        <button>Cadastrar</button>
+                    </div>
+                </form>
+
+                <div class="form-link">
+                    <span>Já tem uma conta? <a href="index.html" class="link login-link">Login</a></span>                       
+                </div>
+            </div> 
+            
+            
+        </div>
+
+        <!--SLIDES RODANDO NO FUNDO-->
+        <div class="slider">
+
+            <div class="slides">
+                <!--Radio Buttons-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <!--Slide images-->
+                <div class="slide first">
+                    <img src="/images/slide1.png" alt="principal"/>
+                </div>
+                <div class="slide">
+                    <img src="/images/slide2.png" alt="texto boas vindas"/>
+                </div>
+                <div class="slide">
+                    <img src="/images/slide3.png" alt="red or blue pill"/>
+                </div>
+                <div class="slide">
+                    <img src="/images/slide4.png" alt="melhores professores"/>
+                </div>
+
+                <!--Navegação auto-->
+                <div class="navegation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+
+        </div>
+    </section>
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

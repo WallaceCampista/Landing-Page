@@ -1,0 +1,376 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* plano de fundo */
+.container{
+    background-image: url(/images/slide1.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+    display: center;
+    align-items: center;
+    justify-content: left;
+    background-color: #000000;
+    column-gap: 30px;;
+}
+/* Caixa do login */
+.form {
+    position: absolute;
+    max-width: 450px;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    /* border-radius: 0px; */
+    background: #fff;
+    overflow: auto;
+
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+#opcoes {
+    text-align: center;
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none; 
+    cursor: pointer; 
+    display: flex;
+}
+/* Estado Civil */
+#label1{
+    font-size: 15px;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+
+}
+#opcoes1 {    
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none; 
+    cursor: pointer; 
+    display: flex;
+    color: #8b8b8b;
+}
+/* Escolaridade */
+#label2,
+#obrigatorios{
+    font-size: 15px;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+
+}
+#opcoes2 {    
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none; 
+    cursor: pointer; 
+    display: flex;
+    color: #8b8b8b;
+}
+
+.container2 {
+    display: flex;
+}
+.field {
+    margin-right: 1px;
+}
+#nome{
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px;
+}
+#sobrenome{
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px;
+}
+.container3 {
+    display: flex;
+}
+.field {
+    margin-right: 1px;
+}
+#cpf{
+    display: flex;
+    height: 100%;
+    width: 370px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px;
+}
+/* box data de nascimento */
+#datalabel {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid #ccc;  
+    color: #8b8b8b;
+}
+#datalabel:focus{
+    border-bottom-width: 5px;
+}
+/* Genero masculino e feminino */
+#genero{
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 0px;
+    text-shadow: 2px 2px 10px #000;
+}
+#checkmas,
+#checkfem {
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 0px;
+}
+/* Endereco e numero */
+#endereco{
+    flex-grow: 1;
+    display: flex;
+    height: 100%;
+    width: 270px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px;
+}
+#numero{
+    flex-grow: 0;
+    display: flex;
+    height: 100%;
+    width: 100px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px;
+}
+/* Estilo para os itens da caixa de seleção */
+#opcoes option {
+    font-size: 14px;
+}
+
+header{
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 10px #000;
+}
+form{
+    margin-top: 30px;
+}
+/* Stylização campo input email e senha */
+.form .field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.field input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px;
+}
+.field button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px;
+    color: #fff;
+    background-color: hsl(231, 100%, 52%);
+    cursor: pointer;
+}
+.field button:hover{
+    transition: 0.5s;
+    height: 100%;
+    width: 100%;
+    border:black;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    color: #fff;
+    background-color: hsl(207, 100%, 52%);
+    cursor: pointer;
+    text-shadow: 5px 5px 5px #000;
+    box-shadow: 5px 5px 5px #000;
+}
+
+.field input{
+    outline: none;
+    padding: 0 15px;
+    border: 2px solid #cacaca;
+}
+.field input:focus{
+    border-bottom-width: 5px;
+}
+/* Dinamica de validação */
+.field input:focus{
+    border-color: #cacaca!important;
+}
+.field input:invalid{
+    border-color: red;
+}
+.field input:valid{
+    border-color: green;
+}
+/* Stylização icone 'revelar */
+.eye-icon{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+} 
+.form-link span,
+.form-link a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000;
+}
+.form a{
+    color: hsl(207, 100%, 52%);
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+.form-content a:hover{
+    text-decoration: underline;
+}
+/* SLIDES RODANDO NO FUNDO */
+.slider{
+    margin: 0 auto;
+    /* width: 800px;
+    height: 800px; */
+    overflow: hidden;
+    background-color: black;
+    background-size: cover;
+}
+.slides{
+    width: 400%;
+    
+    background-size: cover;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 25%;
+    /* position: relative; */
+    transition: 2s;
+    background-size: cover;
+}
+.slide img{
+    width: 100%;
+}
+.manual-navigation{
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+
+}
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    
+}
+/* definindo espaçamento dos marcadores de navegação */
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: #fff;
+    
+}
+
+/* configurando a margen de rolagen das imagens */
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+/* configurando os marcadores de navegação */
+.navegation-auto div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navegation-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 72.4%;
+    display: flex;
+    justify-content: center;
+}
+.navegation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+/* deixando os seletores marcados quando estiverem selecionados */
+#radio1:checked ~ .navegation-auto .auto-btn1{
+    background-color: #fff;
+}
+#radio2:checked ~ .navegation-auto .auto-btn2{
+    background-color: #fff;
+}
+#radio3:checked ~ .navegation-auto .auto-btn3{
+    background-color: #fff;
+}
+#radio4:checked ~ .navegation-auto .auto-btn4{
+    background-color: #fff;
+}
+@media screen and (max-width: 400px) {
+    .form{
+        padding: 15px 10px;
+    }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="icon/favicon.ico" type="images">
+        <title>Home | GhostSec</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/index.css">
+
+        <!-- Boxicons CSS -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    </head>
+    <body>
+        
+        <section class="container forms">
+
+            <!-- Formulário de Login -->
+
+
+            <div class="form login">
+                <div class="form-content">
+                    <header>Login</header>
+                    <form action="#">
+                        <div class="field input-field">
+                            <input type="text" placeholder="Usuário" class="input" maxlength="25" minlength="5" required>
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Senha" class="password" maxlength="20" minlength="8" required>
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+                        
+                        <div class="form-link">
+                            <a href="esqueci.html" class="link esqueci-link">Esqueceu sua senha?</a>
+                        </div>
+
+                        <div class="field button-field">
+                            <button>Entrar</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Não tem uma conta? <a href="cadastro.html" class="link cadastro-link">Cadastre-se</a></span>
+                    </div>
+                </div> 
+                
+                <div class="line"></div>
+
+                
+                <div class="media-options">
+                    <!-- <a href="https://google.com.br" class="field google"> -->
+                    <a href="https://accounts.google.com/v3/signin/identifier?elo=1&ifkv=ATuJsjwM4icaqzRAROJ27RFccqIUTstHdBZhABxUZ_rgJqD7vE-V5yCsdPSG3PLiHzuvmhVhahPX&theme=glif&flowName=GlifWebSignIn&flowEntry=ServiceLogin&continue=https%3A%2F%2Faccounts.google.com%2FManageAccount%3Fnc%3D1" class="field google">
+                        <img src="images/google.png" alt="" class="google-img">
+                        <span>Entrar com Google</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <!--SLIDES RODANDO NO FUNDO-->
+            <div class="slider">
+
+                <div class="slides">
+                    <!--Radio Buttons-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+    
+                    <!--Slide images-->
+                    <div class="slide first">
+                        <img src="/images/slide1.png" alt="principal"/>
+                    </div>
+                    <div class="slide">
+                        <img src="/images/slide2.png" alt="texto boas vindas"/>
+                    </div>
+                    <div class="slide">
+                        <img src="/images/slide3.png" alt="red or blue pill"/>
+                    </div>
+                    <div class="slide">
+                        <img src="/images/slide4.png" alt="melhores professores"/>
+                    </div>
+
+                    <!--Navegação auto-->
+                    <div class="navegation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+    
+                </div>
+
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+    
+            </div>
+
+        </section>
+
+
+        <!-- JavaScript -->
+        <script src="js/script.js"></script>
+    </body>
+</html>
