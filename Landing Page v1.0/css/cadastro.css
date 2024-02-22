@@ -292,7 +292,6 @@ form{
 }
 .slide{
     width: 25%;
-    /* position: relative; */
     transition: 2s;
     background-size: cover;
 }
@@ -316,16 +315,16 @@ form{
     
 }
 /* definindo espaçamento dos marcadores de navegação */
-.manual-btn:not(:last-child){
+/* .manual-btn:not(:last-child){
     margin-right: 40px;
 }
 .manual-btn:hover{
     background-color: #fff;
     
-}
+} */
 
 /* configurando a margen de rolagen das imagens */
-#radio1:checked ~ .first{
+/* #radio1:checked ~ .first{
     margin-left: 0;
 }
 #radio2:checked ~ .first{
@@ -336,10 +335,10 @@ form{
 }
 #radio4:checked ~ .first{
     margin-left: -75%;
-}
+} */
 
 /* configurando os marcadores de navegação */
-.navegation-auto div{
+/* .navegation-auto div{
     border: 2px solid #20a6ff;
     padding: 5px;
     border-radius: 10px;
@@ -352,12 +351,12 @@ form{
     margin-top: 72.4%;
     display: flex;
     justify-content: center;
-}
-.navegation-auto div:not(:last-child){
+} */
+/* .navegation-auto div:not(:last-child){
     margin-right: 40px;
-}
+} */
 /* deixando os seletores marcados quando estiverem selecionados */
-#radio1:checked ~ .navegation-auto .auto-btn1{
+/* #radio1:checked ~ .navegation-auto .auto-btn1{
     background-color: #fff;
 }
 #radio2:checked ~ .navegation-auto .auto-btn2{
@@ -368,7 +367,7 @@ form{
 }
 #radio4:checked ~ .navegation-auto .auto-btn4{
     background-color: #fff;
-}
+} */
 @media screen and (max-width: 400px) {
     .form{
         padding: 15px 10px;
