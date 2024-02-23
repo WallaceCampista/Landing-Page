@@ -8,43 +8,46 @@
         <title>Home | GhostSec</title>
 
         <!-- CSS -->
-        <link rel="stylesheet" href="css/index.css">
+        <link href='css/index.css' rel='stylesheet'>
 
         <!-- Boxicons CSS -->
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' rel='stylesheet'>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 
     </head>
     <body>
         
-        <section class="container forms">
+        <section class="darkmode-container forms">
 
             <!-- Formulário de Login -->
 
 
             <div class="form login">
                 <div class="form-content">
-                    <header>Login</header>
+                    <header>
+                        <h1 class="darkmode-titulo">Login</h1>
+                    </header>
                     <form action="#">
-                        <div class="field input-field">
+                        <div class="field input">
                             <input type="text" placeholder="Usuário" class="input" maxlength="25" minlength="5" required>
                         </div>
 
-                        <div class="field input-field">
+                        <div class="field input">
                             <input type="password" placeholder="Senha" class="password" maxlength="20" minlength="8" required>
                             <i class='bx bx-hide eye-icon'></i>
                         </div>
                         
-                        <div class="form-link">
+                        <div class="darkmode-form-link">
                             <a href="esqueci.html" class="link esqueci-link">Esqueceu sua senha?</a>
                         </div>
 
-                        <div class="field button-field">
+                        <div class="field button">
                             <button>Entrar</button>
                         </div>
                     </form>
 
-                    <div class="form-link">
+                    <div class="darkmode-form-link">
                         <span>Não tem uma conta? <a href="cadastro.html" class="link cadastro-link">Cadastre-se</a></span>
                     </div>
                 </div> 
@@ -58,6 +61,17 @@
                         <img src="images/google.png" alt="" class="google-img">
                         <span>Entrar com Google</span>
                     </a>
+                </div>
+
+                <br>
+                <div class="dropdown">
+                    <button id="btnAcess" class="dropbtn">Acessibilidade</button>
+                    <div class="dropdown-content">
+                      <a id="btn-lightmode" href="#">Modo Claro</a>
+                      <a id="btn-darkmode" href="#">Modo Escuro</a>
+                      <a id="btn-aumfont" href="#">Aumentar FONTE</a>
+                      <a id="btn-dimfont" href="#">Diminuir FONTE</a>                    
+                    </div>
                 </div>
 
             </div>
@@ -105,8 +119,10 @@
     
             </div>
 
+            
         </section>
 
+        
 
         <!-- JavaScript -->
         <script src="js/script.js"></script>
